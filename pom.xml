@@ -48,5 +48,20 @@
     </snapshotRepository>
   </distributionManagement>
 
+<server>
+      <id>aib-release</id>
+      <username>aib-user</username>
+      <password>aib-user</password>
+ </server>
+
+
+
+<server>
+      <id>Aibrepository</id>
+      <username>aib-user</username>
+      <password>aib-user</password>
+ </server>
+
+
 
 </project>
