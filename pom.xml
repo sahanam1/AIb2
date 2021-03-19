@@ -37,8 +37,6 @@
       <id>aib-release</id>
       <name>aib-release</name>
       <url>http://ec2-13-58-199-17.us-east-2.compute.amazonaws.com:8081/nexus/content/repositories/aib-release/</url>
-       <username>aib-user</username>
-      <password>aib-user</password>
       <layout>default</layout>
     </repository>
     <snapshotRepository>
@@ -46,8 +44,6 @@
       <id>Aibrepository</id>
       <name>Aibrepository</name>
       <url>http://ec2-13-58-199-17.us-east-2.compute.amazonaws.com:8081/nexus/content/repositories/Aibrepository/</url>
-          <username>aib-user</username>
-      <password>aib-user</password>
       <layout>legacy</layout>
     </snapshotRepository>
   </distributionManagement>
