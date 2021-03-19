@@ -1,29 +1,23 @@
 pipeline {
-    agent {label 'maven-integration'} 
+    agent {label 'maven-integration'}
 
     tools {
         // Install the Maven version configured as "M3" and add it to the path.
-        maven 'Maven-3.6.0'
-       
+        maven "Maven-3.6.0"
     }
 
-
-
-{
+    stages {
         stage('Build') {
             steps {
                 // Get some code from a GitHub repository
                 git 'https://github.com/sahanam1/AIb2.git'
 
-
                 // Run Maven on a Unix agent.
-   
                 sh "mvn -Dmaven.test.failure.ignore=true clean deploy"
-                // To run Maven on a Windows agent, use
-                // bat "mvn -Dmaven.test.failure.ignore=true clean package"
+
             }
 
+            
+        }
+    }
 }
-}
-	
-	
